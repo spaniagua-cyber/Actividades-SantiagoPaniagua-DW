@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: linear-gradient(135deg, rgb(83, 6, 83), #032033,rgb(81, 190, 233), #093853, rgb(88, 13, 88));
+    font-family: "Asul", serif;
+    padding: 20px; 
+}
+
+
+
+.container-musical{
+    background-color: white;
+    width: 350px; 
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.imagen-portada {
+    width: 150px; /*  */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /**/
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+p{
+    color: rgb(46, 3, 61);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pmusical{
+        color:#27199c;
+        font-size: 20px;
+        font-weiht: bold;
+}
+
+.lista-canciones {
+    display: flex;
+    flex-direction: column; /* Apila las canciones una debajo de otra */
+    gap: 15px; /* Crea una separación automática entre cada canción */
+}
+
+.canciones {
+    background-color: #d7dde4; /* Un gris muuuy clarito */
+    padding: 10px;
+    border-radius: 10px;
+}

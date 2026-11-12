@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+ <!--Doctype e una sentencia que indica que voy a trabajar con un 
+documento de HTML-->
+
+<html lang="es"> <!--Aqui inicia mi pagina con la etquieta de html-->
+<head><!-- Aqui en el head esta todo lo que no es visible en la pagina pero lo hace funcional-->
+<!-- Con los meta datos puedo colocar caracteres especiales, dar informacion al SEO para posicionamiento web -->
+    <meta charset="UTF-8"> <!-- Permite carateres especiales -->
+    <meta name="description" content="Musical para navidad">
+    <meta name="author" content="Santiago Paniagua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 <title>Musical Santi</title>
 </head>
 <body>
 
-<h1>Musical Santi</h1>
-<p>Escucha mis 3 canciones de POP</p>
+    <div class="container-musical">
+        <img src="imagennsqk.jpg" alt="Imagen de artista nsqk" class="imagen-portada">
+
+        <h1>Musical Santi</h1>
+        <p class="pmusical">Escucha 3 canciones de POP alternativo</p>
+        
+            <div class="lista-canciones">
+                <!-- CANCION1 -->
+                <div class="canciones">
+                 <p>Hombre de bien</p>
+                   <audio controls class="audio-player">
+                        <!-- Mp3 de prueba 1 -->
+                        <source src="nsqk - Hombre De Bien (1).mp3" type="audio/mpeg">
+                    </audio>
+                
+            </div>
+
+            <!-- CANCION 2 -->
+            <div class="canciones">
+                <p>Dieznoches</p>
+                    <audio controls class="audio-player">
+                             <!-- Mp3 de prueba 1 -->
+                             <source src="Humbe - Dieznoches.mp3" type="audio/mpeg">
+                        </audio>
+                
+            </div>
+
+            <!-- CANCION 3 -->
+            <div class="canciones">
+                <p>Te estoy correteando</p>
+                    <audio controls class="audio-player">
+                             <!-- Mp3 de prueba 1 -->
+                             <source src="Te Estoy Correteando.mp3" type="audio/mpeg">
+                        </audio>
+                
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
