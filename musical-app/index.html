@@ -23,40 +23,58 @@ documento de HTML-->
         <h1>Musical Santi</h1>
         <p class="pmusical">Escucha 3 canciones de POP alternativo</p>
         
-            <div class="lista-canciones">
+           <!--  <div class="lista-canciones"> -->
+
                 <!-- CANCION1 -->
-                <div class="canciones">
+                <!-- <div class="canciones">
                  <p>Hombre de bien</p>
-                   <audio controls class="audio-player">
+                   <audio controls class="audio-player"> -->
                         <!-- Mp3 de prueba 1 -->
-                        <source src="nsqk - Hombre De Bien (1).mp3" type="audio/mpeg">
+                        <!-- <source src="Hombredebien.mp3" type="audio/mpeg">
                     </audio>
                 
-            </div>
+            </div> -->
 
             <!-- CANCION 2 -->
-            <div class="canciones">
+            <!-- <div class="canciones">
                 <p>Dieznoches</p>
-                    <audio controls class="audio-player">
-                             <!-- Mp3 de prueba 1 -->
-                             <source src="Humbe - Dieznoches.mp3" type="audio/mpeg">
+                    <audio controls class="audio-player"> -->
+                             <!-- Mp3 de prueba 2 -->
+                             <!-- <source src="Dieznoches.mp3" type="audio/mpeg">
                         </audio>
                 
-            </div>
+            </div> -->
 
             <!-- CANCION 3 -->
-            <div class="canciones">
+            <!-- <div class="canciones">
                 <p>Te estoy correteando</p>
-                    <audio controls class="audio-player">
-                             <!-- Mp3 de prueba 1 -->
-                             <source src="Te Estoy Correteando.mp3" type="audio/mpeg">
+                    <audio controls class="audio-player"> -->
+                             <!-- Mp3 de prueba 3 -->
+                             <!-- <source src="Teestoycorreteando.mp3" type="audio/mpeg">
                         </audio>
                 
             </div>
 
+        </div> -->
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">Hombre de bien</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="Hombredebien.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
         </div>
+      </div>
 
     </div>
 
+<script src="script.js"></script> 
 </body>
 </html>
